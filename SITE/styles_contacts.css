@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligner le contenu en haut */
+    height: 100vh;
+    margin: 0;
+    padding-top: 150px; /* Ajouter un padding-top pour compenser la barre de navigation */
+}
+
+header {
+    margin-left: -50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo img.logo-img {
+    width: 160px;
+    height: 68px;
+    margin-right: 100px;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a.contacts-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; /* Écarter les sections */
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin-top: auto; /* Positionner en bas de la page */
+}
+
+.personal-info, .container {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: left;
+    margin-top: 0px; /* Ajouter un margin-top pour descendre les sections */
+}
+
+.personal-info {
+    margin-right: 50px; /* Ajouter un espace entre les deux sections */
+}
+
+.personal-info h1, .container h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+}
+
+.personal-info p, .container form label {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.personal-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.personal-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Changer le curseur pour indiquer que le bouton est désactivé */
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    position: relative;
+    opacity: 0.5; /* Rendre la section légèrement grisée */
+    pointer-events: none; /* Désactiver les interactions */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Centrer et faire pivoter le texte en diagonale */
+    color: #ff0000; /* Texte blanc */
+    font-size: 80px; /* Augmenter la taille du texte */
+    text-align: center;
+    font-weight: bold; /* Rendre le texte en gras */
+    background-color: rgba(0, 0, 0, 0); /* Ajouter un fond semi-transparent */
+    padding: 20px; /* Ajouter un espacement autour du texte */
+}
+
+nav ul li a:hover {
+    /* Définissez la couleur de fond et la couleur du texte lorsque la souris survole les boutons du header */
+    background-color: #333; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image4.jpg" alt="Image 1" onclick="displayImage('image4.jpg')">
+                    <img src="imagev1.jpg" alt="Image 1" onclick="displayImage('imagev1.jpg')">
+                    <img src="imagev2.jpg" alt="Image 1" onclick="displayImage('imagev2.jpg')">
+                    <img src="imagev3.jpg" alt="Image 1" onclick="displayImage('imagev3.jpg')">
+                </div>
+            </div>
+            <div class="container">
+                <h1>Voitures autonome</h1>
+                <p>Trois projets distincts de conception de robots ont été réalisés, chacun répondant à des exigences spécifiques :</p>
+                <p>Dans le premier projet, un robot a été développé pour opérer dans des environnements confinés et potentiellement radioactifs. Ce robot utilise une carte Arduino Uno et des capteurs pour suivre une ligne prédéfinie, détecter des barrières et localiser des balises. Le contrôle des moteurs et des actions du robot est effectué via des programmes écrits dans l'IDE Arduino, utilisant une programmation basée sur des registres. Des fonctionnalités de sécurité sont intégrées, notamment un retour automatique en cas de température élevée.</p>
+                <p>Le deuxième projet implique la création d'un robot suiveur de ligne capable de détecter la couleur des obstacles rencontrés sur son chemin. Ce robot utilise une combinaison de capteurs, y compris un capteur de ligne et un capteur de couleur TCS34725, ainsi qu'un télémètre pour détecter les obstacles. Il prend des décisions basées sur la couleur détectée, lui permettant de choisir le chemin à suivre. Ce robot a été testé dans divers scénarios, y compris des compétitions, démontrant ses capacités avancées de perception et de navigation.</p>
+                <p>Enfin, le troisième projet se concentre sur la conception d'un robot suiveur de ligne capable de s'arrêter devant les obstacles tout en suivant une trajectoire prédéfinie. Ce robot utilise des capteurs de ligne et de distance pour détecter la présence de la ligne ainsi que la proximité des obstacles. Son fonctionnement repose sur un schéma logique combinatoire utilisant des portes logiques pour gérer ses actions en fonction des informations reçues des capteurs. Des fonctionnalités telles qu'un arrêt de 6 secondes devant les obstacles et une priorité à droite sont intégrées pour garantir une navigation efficace et sécurisée.</p>
+            <p>Compte rendu <a href="voiture1.pdf" download>ici</a> et <a href="voiture3.pdf" download>ici</a>.</p>
+            <p>Vous pouvez visionner des vidéos : <a href="https://www.youtube.com/shorts/TluJ3NQPGPQ" target="_blank">Robot en conditions normales</a>, <a href="https://www.youtube.com/shorts/cY-pNGHWh1A" target="_blank">Robot en danger</a>, <a href="https://youtu.be/Cg61SnHwq0s" target="_blank">Robot chemin rouge</a>, <a href="https://youtu.be/bSsag6ugMUA" target="_blank">Robot chemin vert</a>, <a href="https://youtu.be/GQl6KrALVp8" target="_blank">Robot chemin bleu</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

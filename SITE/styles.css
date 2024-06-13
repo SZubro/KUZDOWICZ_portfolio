@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    margin-left: -50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Assure que le header est au-dessus de tout autre contenu */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px; /* Increased font size */
+    font-weight: bold;
+}
+
+.logo img.logo-img {
+    width: 160px;
+    height: 68px;
+    margin-right: 100px; /* Adjust this value to shift the text further right */
+}
+
+.logo span {
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a.contacts-btn {
+    padding: 5px 10px;
+    background-color: #007bff; /* Couleur bleue du logo */
+    color: #fff; /* Couleur du texte du bouton */
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 0;
+    padding-top: 100px;
+    background: url('background.jpg') no-repeat center center/cover; /* Add your background image here */
+    min-height: calc(100vh - 60px); /* Utiliser calc() pour ajuster la hauteur en fonction de la vue du port */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 120px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1500px; /* Reduced max-width from 1800px to 1200px */
+    margin-top: 50px; /* Remonter toute la partie centrale */
+}
+
+.intro img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 80px;
+}
+
+.intro-text {
+    max-width: 1000px;
+}
+
+.intro-text h1 {
+    color: #007bff;
+    font-size: 54px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-text p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 100px;
+    text-align: center; /* Aligner les boutons vers la droite */
+}
+
+.buttons .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.buttons .projets {
+    background-color: #ff7f0e;
+    color: #fff;
+}
+
+.buttons .competences {
+    background-color: #ff7f0e;
+    color: #fff;
+}
+
+.buttons .contacts {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.buttons .btn:hover {
+    /* Définissez la couleur de fond et la couleur du texte lorsque la souris survole les boutons */
+    background-color: #333; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+nav ul li a:hover {
+    /* Définissez la couleur de fond et la couleur du texte lorsque la souris survole les boutons du header */
+    background-color: #333; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}

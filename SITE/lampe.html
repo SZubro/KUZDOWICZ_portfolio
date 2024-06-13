@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image2.jpg" alt="Image 1" onclick="displayImage('image2.jpg')">
+                    <img src="image04.jpg" alt="Image 2" onclick="displayImage('image04.jpg')">
+                    <img src="image05.jpg" alt="Image 3" onclick="displayImage('image05.jpg')">
+                    <img src="image06.jpg" alt="Image 4" onclick="displayImage('image06.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Lampe de poche</h1>
+                <p>
+                    Le but de cette SAE est de conceptualiser une lampe de poche utilisant un circuit RL pour charger un courant en fonction du temps. 
+                    Ce courant est envoyé à l’aide d’un monostable pour assurer un bon rendement et une bonne longévité. Le cahier des charges exige 
+                    l'utilisation d'une diode polarisée, une alimentation de 5V, 0V et -5V à partir de 9V, un facteur d'échelle de 80 mV, et une alerte 
+                    via une LED rouge lorsque la température dépasse 35 degrés.
+                </p>
+                <p>
+                    Le schéma de la lampe est divisé en deux parties :
+                </p>
+                <p>L’électronique de commande, générant un signal rectangulaire pour périodiquement ouvrir et fermer l'interrupteur K.</p>
+                <p>L’électronique de puissance, permettant le passage du courant à travers la LED avec un rendement optimal.</p>
+                <h3>Astable</h3>
+                <p>
+                    L'astable génère un signal rectangulaire entre 0 et 1.5V, alimentant périodiquement une bobine pour minimiser la consommation de courant. 
+                    Théoriquement, une impulsion de 33 µs (30 kHz) est souhaitée. Les composants calculés sont : R1 = 657 Ω, R2 = 1,8 k Ω et C1 = 10 nF.
+                </p>
+            
+                <h3>Circuit de Puissance (LED)</h3>
+                <p>
+                    Cette partie vise à alimenter une LED avec une source de tension périodique. Utilisant la propriété de la bobine, la LED est alimentée 
+                    avec le moins de courant possible tout en respectant son seuil de 3.4V. Avec une source d’alimentation de 1.5V et V<sub>ce(min)</sub> = 0,1V, 
+                    le nombre de spires pour la bobine est calculé à 15 tours.
+                </p>
+                <p>
+                    Pour connecter correctement la résistance R<sub>b</sub> :
+                </p>
+                <p>
+                    R<sub>b</sub> = U<sub>rb</sub> / I<sub>b</sub> = 0.7 / 7.75 × 10<sup>-4</sup> ≈ 910 Ω
+                </p>
+                <p>
+                    La lampe respecte les exigences du cahier des charges avec un courant proche de 10mA, alimentée par 1,5V et un signal de 30 kHz. 
+                    Des optimisations possibles incluent l'utilisation de l’astable pour faire clignoter la LED et l'intégration de potentiomètres pour 
+                    ajuster l'intensité lumineuse.
+                </p>
+                <p>Compte rendu <a href="lampe.pdf" download>ici</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
