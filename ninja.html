@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image8.jpg" alt="Image 1" onclick="displayImage('image8.jpg')">
+                    <img src="imagen.jpg" alt="Image 2" onclick="displayImage('imagen.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Voiture robot ninja</h1>
+                <p>                  
+                Le projet consistait à concevoir et réaliser un robot "tortue ninja" capable de s'infiltrer dans des canalisations. Le cahier des charges exigeait un petit véhicule de faible consommation d’énergie, avec une longue durée d’utilisation, une caméra miniature de bonne qualité avec connexion wifi, vision nocturne via une LED, détection de fin de parcours par un capteur à ultrasons, mobilité autonome et deux moteurs. Un planning prévisionnel et réel (avec écarts notables) a été établi. Le schéma fonctionnel comprenait une batterie alimentant le microcontrôleur, les servomoteurs, la caméra et le capteur à ultrasons. Les composants choisis incluaient un module ESP32-CAM, un capteur US HC-SR04, des servomoteurs FS90R, et une power bank de 10500mAh, justifiés par leurs spécifications techniques et besoins énergétiques. La conception 3D comprenait un châssis pour loger tous les composants et optimiser l'espace dans les canalisations. Les tests de composants ont été menés, incluant le câblage et la programmation des servomoteurs et du capteur à ultrasons. L’ESP32-CAM a posé des problèmes techniques, nécessitant un remplacement. Des améliorations potentielles incluent l’utilisation de roues en caoutchouc, l’intégration d’une carte micro SD, une protection hydrophobe et une batterie plus compacte. Malgré les défis rencontrés, le projet a permis d’approfondir les connaissances en conception robotique et électronique, avec des perspectives d’optimisation future du robot.
+                </p>
+            <p>Compte rendu <a href="ninja.pdf" download>ici</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image3.jpg" alt="Image 1" onclick="displayImage('image3.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Prise en main arduino</h1>
+                <p>
+                    L'objectif de cette SAE était de manipuler la carte Arduino afin de comprendre son utilisation. Nous avons commencé par des tâches simples pour progresser vers des tâches plus complexes. Nous avons réalisé un programme permettant d'allumer et d'éteindre une LED de manière répétée avec des intervalles définis. Un programme a été créé pour lire une entrée analogique et afficher le résultat sur le moniteur série. Différents programmes ont été développés pour jouer une mélodie, ajouter des fonctions répétitives, et varier la vitesse de la mélodie à l'aide d'un potentiomètre. Un programme spécifique a été modifié pour jouer "La Marseillaise". Nous avons écrit un programme pour lire une valeur d'entrée analogique, l'afficher et l'utiliser pour définir la modulation de largeur d'impulsion (PWM) d'une sortie, en affichant également les résultats sur le moniteur série. Un programme similaire à l'utilisation de la sortie PWM a été réalisé, mais cette fois-ci pour varier la vitesse d'un moteur à courant continu (MCC). Un projet de robot suiveur de ligne a été tenté, où le robot devait suivre une ligne en respectant une priorité à droite. Cependant, des difficultés ont été rencontrées, empêchant le bon fonctionnement du robot malgré des vérifications de câblage et de programme. En conclusion, nous avons manipulé la carte Arduino et avons compris comment écrire et modifier des programmes pour répondre à des cahiers des charges spécifiques. Chaque exemple a été correctement câblé et testé, bien que des défis persistent dans les projets plus complexes.
+                </p>
+            <p>Compte rendu <a href="arduino.pdf" download>ici</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

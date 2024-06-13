@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligner le contenu en haut */
+    height: 100vh;
+    margin: 0;
+    padding-top: 150px; /* Ajouter un padding-top pour compenser la barre de navigation */
+}
+
+header {
+    margin-left: -50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo img.logo-img {
+    width: 160px;
+    height: 68px;
+    margin-right: 100px;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a.contacts-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; /* Écarter les sections */
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin-top: auto; /* Positionner en bas de la page */
+}
+
+.personal-info, .container {
+    background-color: transparent; /* Retirer le fond blanc */
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: none; /* Enlever l'ombre autour des sections */
+    width: 45%;
+    text-align: left;
+    margin-top: 0px; /* Ajouter un margin-top pour descendre les sections */
+}
+
+.personal-info {
+    margin-right: 50px; /* Ajouter un espace entre les deux sections */
+}
+
+.personal-info h1, .container h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+}
+
+.personal-info p, .container p {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.personal-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.personal-info a:hover {
+    text-decoration: underline;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: calc(50% - 100px); /* Ajuster la largeur pour que les images soient plus petites */
+    margin-bottom: 20px; /* Espacement entre les lignes d'images */
+    margin-right: 20px;
+    border-radius: 10px; /* Coins arrondis pour les images */
+    box-shadow: none; /* Enlever l'ombre autour des images */
+    transition: filter 0.3s ease; /* Transition fluide pour le filtre */
+}
+
+.image-gallery img:hover {
+    filter: grayscale(100%); /* Transformer l'image en niveau de gris */
+}
+
+nav ul li a:hover {
+    /* Définissez la couleur de fond et la couleur du texte lorsque la souris survole les boutons du header */
+    background-color: #333; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+.container {
+    background-color: #ffffff; /* Ajouter un fond blanc à la section */
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajouter une légère ombre */
+    width: 45%;
+    text-align: left;
+    margin-top: 0px; /* Ajouter un margin-top pour descendre la section */
+}
+
+.container h1 {
+    font-size: 24px; /* Réduire la taille du titre */
+}
+
+.container p {
+    font-size: 16px; /* Réduire la taille du texte */
+}
+
+.container a {
+    font-size: 16px; /* Réduire la taille du lien */
+}

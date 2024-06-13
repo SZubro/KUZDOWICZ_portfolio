@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image1.jpg" alt="Image 1" onclick="displayImage('image1.jpg')">
+                    <img src="image01.jpg" alt="Image 2" onclick="displayImage('image01.jpg')">
+                    <img src="image02.jpg" alt="Image 3" onclick="displayImage('image02.jpg')">
+                    <img src="image03.jpg" alt="Image 4" onclick="displayImage('image03.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Métronome électrique</h1>
+                <p>Cette SAE présente la conception et la réalisation d'un métronome avec des fonctionnalités spécifiques, notamment la possibilité de régler la fréquence des battements et la hauteur du son. Le métronome répond aux exigences du cahier des charges, offrant une durée de battement proche de 20 ms, une plage de réglage de la fréquence des battements de 40 à 208 BPM, et une plage de fréquence sonore réglable de 250 à 10000 Hz.</p>
+
+<p>Le fonctionnement du métronome repose sur plusieurs composants principaux :</p>
+<ol>
+    <p>Astable 1, qui génère des signaux rectangulaires pour les battements, avec une fréquence réglable.</p>
+    <p>Un inverseur pour réguler la tension de sortie.</p>
+    <p>Astable 2, fournissant la hauteur des battements avec une fréquence réglable.</p>
+    <p>Un amplificateur pour amplifier le signal.</p>
+    <p>Un haut-parleur pour émettre le son.</p>
+</ol>
+<p>Chaque composant est testé individuellement pour s'assurer de son bon fonctionnement. Après l'assemblage final, le métronome répond aux spécifications du cahier des charges. La conclusion explore des perspectives telles que la possibilité d'alimenter le métronome avec une pile moins puissante pour le rendre plus portable.</p>
+<p>Compte rendu <a href="metronome.pdf" download>ici</a>.</p>
+<p>Vous pouvez visionner une vidéo sur <a href="https://youtu.be/UpF4yfxB9BM" target="_blank">YouTube</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

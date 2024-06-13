@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image6.jpg" alt="Image 1" onclick="displayImage('image6.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Automate</h1>
+                <p>   
+                Le projet concerne le pilotage d'un convoyeur à l'aide d'un automate Siemens S7-1200, chargé de transférer les pièces jusqu'à l'espace de travail du robot, détectées par un capteur C1. La mise sous tension du système est assurée par l'interrupteur S1 avec une signalisation H1. Le cycle démarre lorsque l'opérateur appuie sur le bouton marche, maintenant le convoyeur en fonctionnement jusqu'à ce que le bouton arrêt soit actionné, signalé par le voyant H2. Le convoyeur s'arrête automatiquement lorsqu'un objet est détecté par le capteur C1 et redémarre lorsque l'objet n'est plus détecté. L'arrêt manuel du convoyeur peut être effectué via les boutons-poussoirs Ar et Aru, nécessitant une réactivation par le bouton Ma pour redémarrer. Le projet comprend également la réalisation du schéma de l'armoire électrique, la logique combinatoire, la programmation Ladder avec Tia Portal, le câblage de l'armoire, ainsi que les améliorations comme le mode automatique/manuel et un compteur, et enfin la programmation en Grafcet avec Zelio Soft.
+                </p>
+            <p>Compte rendu <a href="automate.pdf" download>ici</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

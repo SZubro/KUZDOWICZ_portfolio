@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image7.jpg" alt="Image 1" onclick="displayImage('image7.jpg')">
+                    <img src="images2.jpg" alt="Image 2" onclick="displayImage('images2.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Sécurité d'une maison</h1>
+                <p>   
+                    Le projet SAE a pour but de réaliser un système de sécurité domestique utilisant un microcontrôleur Arduino Mega pour avertir le propriétaire en cas d'intrusion. Le système utilise des capteurs de mouvement et de son pour détecter les intrusions, couplés à un module de communication FM pour transmettre des alertes à distance. La maquette de la maison, faite de bois, comprend deux voies d'intrusion (porte et fenêtre) et est conçue pour être démontable pour un stockage facile. Les composants choisis incluent un capteur de mouvement , un capteur sonore, un module de communication FM et un Grove Mega Shield pour faciliter le câblage.
+
+                    Le système a été programmé pour activer une alarme lorsque des mouvements ou des sons sont détectés, après l'entrée d'un code d'activation correct. Le capteur de mouvement est branché sur la broche A0, le capteur sonore sur A4, et le module de communication sur une broche définie. Une LED indique l'état de l'alarme, s'allumant lorsqu'elle est active et clignotant en cas d'intrusion. Le code pour le fonctionnement inclut la gestion des capteurs, l'activation et la désactivation de l'alarme, et l'envoi de messages via le module de communication FM.
+                    
+                    Le projet a été réalisé en utilisant des matériaux réutilisables pour minimiser l'impact environnemental. Les planches de bois et les composants Arduino pourront être réutilisés dans d'autres projets. L'étude a permis d'approfondir les connaissances en capteurs et en transmission sans fil, offrant une perspective pratique similaire à un environnement professionnel. La conclusion souligne l'intérêt et l'apprentissage apportés par cette SAE, particulièrement en ce qui concerne l'utilisation de la transmission sans fil pour des applications de sécurité électronique.
+                </p>
+            <p>Compte rendu <a href="securite.pdf" download>ici</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

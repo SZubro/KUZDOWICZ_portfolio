@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - GEII KUZDOWICZ Théo</title>
+    <link rel="stylesheet" href="styles_projets.css">
+    <script>
+        // Fonction pour afficher une image en grand
+        function displayImage(imgSrc) {
+            // Créez une nouvelle fenêtre avec l'image agrandie
+            window.open(imgSrc, '_blank', 'height=600,width=800');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            GEII <span>KUZDOWICZ Théo</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="travaux_projets.html">Travaux/Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contacts.html" class="contacts-btn">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="personal-info">
+                <div class="image-gallery">
+                    <img src="image5.jpg" alt="Image 1" onclick="displayImage('image5.jpg')">
+                    <!-- Ajoutez les autres images de la même manière -->
+                </div>
+            </div>
+            <div class="container">
+                <h1>Bras robotique Nyrio</h1>
+                <p>
+                    Le projet vise à automatiser la tâche "pick and place" sur une chaîne de production en utilisant un bras articulé Ned2 et un convoyeur NIRYO. Divisé en deux parties, la première consiste à programmer le robot pour communiquer avec le convoyeur, et la seconde à mettre en place l'alimentation électrique du robot. Les outils incluent le convoyeur NIRYO, équipé de modules aimantés, et le bras articulé Ned2. La première partie du projet comprend trois étapes : l'utilisation autonome du convoyeur via la control box, le pilotage du convoyeur par des blocs fonctionnels du Ned2, et enfin, l'intégration d'une carte Arduino pour contrôler à la fois le Ned2 et le convoyeur. Chaque étape est accompagnée de principes de fonctionnement, de schémas de câblage et de détails sur la programmation nécessaire. Le projet démontre une combinaison de compétences en robotique, en programmation et en automatisation, visant à améliorer l'efficacité des opérations de production.
+                </p>
+            <p>Compte rendu <a href="nyrio.pdf" download>ici</a>.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
